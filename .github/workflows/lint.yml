@@ -4,9 +4,9 @@ jobs:
   golangci-lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@61b9e3751b92087fd0b06925ba6dd6314e06f089 # master
       - name: golangci-lint
-        uses: reviewdog/action-golangci-lint@v1
+        uses: reviewdog/action-golangci-lint@02bcf8c1a9febe8620f1ca523b18dd64f82296db # v1
         with:
           github_token: ${{ secrets.github_token }}
           reporter: github-pr-review
